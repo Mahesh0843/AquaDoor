@@ -33,6 +33,7 @@ public class AgentServiceImpl implements AgentService {
     }
 
     @Override
+    @Transactional
     public Agent updateAgent(Long id, Agent updatedAgent) {
         Agent existingAgent = getAgentById(id);
 
@@ -49,11 +50,13 @@ public class AgentServiceImpl implements AgentService {
     }
 
     @Override
+    @Transactional
     public void deleteAgentById(Long id) {
         agentRepository.deleteById(id);
     }
 
     @Override
+    @Transactional
     public void deleteAllAgents() {
         agentRepository.deleteAll();
     }
