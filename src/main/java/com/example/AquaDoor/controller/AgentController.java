@@ -37,7 +37,7 @@ public class AgentController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Agent> updateUser(@PathVariable Long id, @RequestBody Agent agent) {
+    public ResponseEntity<Agent> updateAgent(@PathVariable Long id, @RequestBody Agent agent) {
         Agent updatedAgent = agentService.updateAgent(id, agent);
         return new ResponseEntity<>(updatedAgent, HttpStatus.OK);
     }
