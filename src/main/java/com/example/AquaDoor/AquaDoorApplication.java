@@ -9,5 +9,4 @@ public class AquaDoorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AquaDoorApplication.class, args);
 	}
-
 }
