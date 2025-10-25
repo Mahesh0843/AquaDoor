@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/aquawater/agents")
+@RequestMapping("/aquadoor/agents")
 public class AgentController {
 
     @Autowired
