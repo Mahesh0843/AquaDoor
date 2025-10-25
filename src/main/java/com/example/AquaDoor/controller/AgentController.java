@@ -49,7 +49,7 @@ public class AgentController {
     }
 
     @DeleteMapping
-    public ResponseEntity<String> deleteAllUsers() {
+    public ResponseEntity<String> deleteAllAgent() {
         agentService.deleteAllAgents();
         return new ResponseEntity<>("All Agents Deleted Successfully!", HttpStatus.OK);
     }
